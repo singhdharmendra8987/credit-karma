@@ -1,6 +1,29 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
+  constructor() {
+      super();
+		
+      this.state = {
+         info: 
+         [
+            {
+               "header": "COMPANY INFO",
+               "links": ["About Credit Karma", "Careers", "Help Center", "In The News", "Security Practices", "Privacy Policy", "Terma of Use"] 
+            }, {
+               "header": "POPULAR OFFERS",
+               "links": ["Best Credit Cards From Our Partners", "Credit Cards for Limited Credit", "Credit Cards for Poor Credit", "Credit Cards for Good Credit", "Personal Loans", "Auto Insurance"] 
+            }, {
+               "header": "CREDIT RESOURCES",
+               "links": ["Credit and Finance Articles", "Credit Karma Community", "Credit Card Reviews", "Financial Calculators", "Credit Karma Blog"] 
+            }, {
+               "header": "COMPANY INFO",
+               "links": ["What is a Good Credit Score?", "Quick Tips for Your Credit Health", "Free Credit Report", "Free Credit Monitoring", "Free Credit Score", "Credit Scores"] 
+            },
+         ]
+      }
+   }
+
   render() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
